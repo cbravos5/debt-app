@@ -1,0 +1,82 @@
+// Place all the styles related to the Debts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.box {
+  border-radius: 1rem;
+}
+
+.green-box {
+  background: #28a745;
+}
+
+.red-box {
+  background: #dc3545;
+}
+
+.bg-light-dark {
+  background: #6e6e6ec5;
+}
+
+.border-debt {
+  border: 0;
+  border-right: 0.7em;
+  border-style: inset;
+}
+
+.debt-item {
+  font-size: 1.7rem;
+}
+
+.debt-item :nth-child(3) {
+  font-size: 1rem;
+}
+
+.btn-group > a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+.btn-group > a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+.hover-danger:hover {
+  background: #dc3545;
+}
+
+.hover-warning:hover {
+  background: #ffc107;
+}
+
+.hover-info:hover {
+  background: #007bff;
+}
+
+.hover-success:hover {
+  background: #28a745 !important;
+  border: none;
+}
+
+.md-icons > a {
+  font-size: 1.2rem;
+}
+
+.truncate {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 600px) {
+  .debt-item {
+    font-size: 1.3rem;
+  }
+
+  .debt-item :nth-child(3) {
+    font-size: 0.8rem;
+  }
+}

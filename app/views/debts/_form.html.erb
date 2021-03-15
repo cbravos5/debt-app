@@ -1,0 +1,32 @@
+
+        <div class="mb-5 pb-1 "> 
+          <h1 class="text-success"><%= action_name === 'new' ? 'New Debt' : 'Edit Debt' %></h1>
+          <h6 class="text-light">Fill the info of your debt</h6>
+        </div>
+        <%= form_with model: @debt, class: "mb-3 text-light w-50 mx-auto" do |form| %>
+                <% if @debt.errors.any? %>
+                    <div class="text-center text-dark alert alert-danger">
+                        <% @debt.errors.each do |error| %>
+                            <p><strong><%= error.full_message %></strong></p>
+                        <% end %>
+                    </div>
+                <% end %>
+
+            <div class="form-group">
+                <%= form.label :value %>
+                <%= form.number_field :value, class: 'form-control', required: true %>
+            </div>
+            <div class="form-group">
+            <%= form.label :title %>
+            <%= form.text_field :title, class: 'form-control', required: true%>
+            </div>
+            <div class="form-group">
+                <%= form.label :description %>
+                <%= form.text_area :descp, class: 'form-control'%>
+            </div>
+            <%= form.submit class: "btn btn-light" %>
+        <% end %>
+    
+
+
+

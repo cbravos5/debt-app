@@ -1,0 +1,14 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  background: black;
+}
+
+.invalid:not(label) {
+  box-shadow: 0 0 0 2px red;
+}
+
+.invalid:not(label):focus {
+  box-shadow: none;
+}
